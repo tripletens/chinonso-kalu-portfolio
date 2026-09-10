@@ -288,5 +288,30 @@ export const projects = [
     confidential: false,
     githubUrl: "https://github.com/tripletens/wpmedia-interview",
     liveUrl: null
+  },
+  {
+    id: "easport-analytics",
+    title: "EA Sports Analytics & Performance Dashboard",
+    tier: 2,
+    isFeatured: false,
+    category: "Analytics & Data Visualization",
+    industry: "Esports & Gaming Analytics",
+    badge: "Public Repository",
+    shortDescription: "Esports analytics platform providing match performance tracking, tournament metrics, player statistics, and real-time visualization dashboards.",
+    overview: "A comprehensive analytics platform designed to ingest, process, and display performance data for competitive esports tournaments. Features match telemetry visualizations, win/loss ratio distributions, player performance scoring, and comparative team statistics.",
+    contribution: "Engineered backend data aggregation pipelines, RESTful API endpoints for telemetry metrics, dynamic data transformation algorithms, and responsive chart/dashboard layouts.",
+    challenges: "Processing multi-parameter match dataset logs, optimizing aggregation queries for responsive rendering, and maintaining interactive UI updates across complex metric filters.",
+    solution: "Structured indexed data schemas, implemented caching layer for high-frequency statistical queries, and built responsive data visualization components.",
+    technologies: ["JavaScript", "React.js", "REST APIs", "Data Visualization / Charts", "Node.js", "Tailwind CSS"],
+    highlights: [
+      "Real-time esports match statistics & leaderboard metrics",
+      "Interactive data visualization charts & team comparison views",
+      "Optimized metric aggregation pipelines & backend data filtering",
+      "Public GitHub repository"
+    ],
+    availability: "Public / Open Source Project",
+    confidential: false,
+    githubUrl: "https://github.com/tripletens/easport-analytics",
+    liveUrl: null
   }
 ];
