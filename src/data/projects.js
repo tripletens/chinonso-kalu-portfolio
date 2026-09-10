@@ -139,6 +139,32 @@ export const projects = [
     liveUrl: null
   },
 
+  {
+    id: "karakata-marketplace-api",
+    title: "Karakata Multi-Vendor Marketplace API",
+    tier: 2,
+    isFeatured: false,
+    category: "E-Commerce / Marketplace",
+    industry: "E-Commerce & Digital Commerce",
+    badge: "Commercial Platform",
+    shortDescription: "Multi-vendor e-commerce backend API handling product catalogs, vendor onboarding, order processing, and payment settlement workflows.",
+    overview: "A comprehensive multi-vendor marketplace backend system architected to support complex multi-merchant product management, escrow/payment dispatches, cart & checkout processing, vendor commissions, and order fulfillment tracking.",
+    contribution: "Engineered core RESTful APIs, database architecture, vendor balance management, role-based vendor dashboard access, and payment webhook integrations.",
+    challenges: "Handling concurrent order placements across separate vendor stores, calculating split payout commissions, and maintaining high database integrity during checkout spikes.",
+    solution: "Designed transactional order flow pipelines, automated payout ledger calculations using Laravel database transactions, integrated secure payment gateways, and configured Redis caching for fast product catalog indexing.",
+    technologies: ["PHP", "Laravel", "MySQL", "REST APIs", "Redis", "Payment Gateways", "Role-Based Access Control", "Queue Processing"],
+    highlights: [
+      "Multi-vendor product management & catalog engine",
+      "Automated order routing & vendor payout ledger calculation",
+      "Payment gateway webhook handling & instant order status updates",
+      "Role-based dashboard permissions for vendor store management"
+    ],
+    availability: "Professional / Private Client Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+
   // --- TIER 3: ADDITIONAL PROFESSIONAL WORK ---
   {
     id: "osamede-corporate",

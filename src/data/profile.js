@@ -3,7 +3,7 @@ export const profile = {
   title: "Software Engineer | Backend (PHP / Laravel)",
   supportingTitle: "Software Engineer / Application Support Engineer",
   email: "iamkaluchinonso@gmail.com",
-  location: "Lagos, Nigeria",
+  location: "Nigeria",
   github: "https://github.com/tripletens",
   githubUsername: "tripletens",
   linkedin: "https://linkedin.com/in/iamkaluchinonso",

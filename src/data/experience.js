@@ -3,7 +3,7 @@ export const experience = [
     id: "mtn-nigeria",
     role: "Application Support Analyst",
     company: "MTN Nigeria",
-    location: "Lagos, Nigeria",
+    location: "Nigeria",
     period: "September 2022 – August 2026",
     type: "Enterprise Production Support & Web Systems",
     summary: "Supporting production applications, maintaining internal web systems, and ensuring operational stability across critical enterprise platforms.",
