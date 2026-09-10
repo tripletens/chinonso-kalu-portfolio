@@ -9,7 +9,6 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Approach from './components/Approach';
 import Education from './components/Education';
-import GitHubSection from './components/GitHubSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -27,7 +26,6 @@ export default function App() {
           <Skills />
           <Approach />
           <Education />
-          <GitHubSection />
           <Contact />
         </main>
         <Footer />
