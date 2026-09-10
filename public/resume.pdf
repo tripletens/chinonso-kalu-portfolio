@@ -3,39 +3,149 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<< /Type /Pages /Kids [3 0 R 6 0 R] /Count 2 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 8 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 190 >>
+<< /Length 1450 >>
 stream
 BT
-/F1 20 Tf
-50 720 Td
-(Chinonso Kalu - Software Engineer) Tj
-/F1 12 Tf
-0 -30 Td
-(Resume placeholder. Drop your official resume PDF into public/resume.pdf) Tj
-0 -20 Td
-(Contact: chinonso.kalu@example.com | LinkedIn: iamkaluchinonso) Tj
+/F2 20 Tf
+36 745 Td
+(CHINONSO KALU) Tj
+0 -18 Td
+/F2 9.5 Tf
+(SOFTWARE ENGINEER | BACKEND ARCHITECTURE & SYSTEMS AUTOMATION) Tj
+0 -14 Td
+/F1 8.5 Tf
+(Nigeria  |  iamkaluchinonso@gmail.com  |  +234 901 522 2109  |  linkedin.com/in/iamkaluchinonso  |  github.com/tripletens) Tj
+0 -18 Td
+/F2 10 Tf
+(PROFESSIONAL SUMMARY) Tj
+0 -12 Td
+/F1 8.5 Tf
+(Performance-driven Software Engineer with 5+ years of experience designing, architecting, and scaling enterprise web platforms,) Tj
+0 -10 Td
+(core fintech transaction engines, and asynchronous processing architectures. Expert in PHP, Laravel, Action-Service-Repository) Tj
+0 -10 Td
+(design patterns, and RESTful microservices. Strong focus on fault-tolerant systems, high-volume transactional workloads, double-entry) Tj
+0 -10 Td
+(accounting ledgers, and automated cloud workflows. Passionate about eliminating bottlenecks through clean code engineering.) Tj
+0 -18 Td
+/F2 10 Tf
+(TECHNICAL SKILLS) Tj
+0 -12 Td
+/F2 8.5 Tf
+(Languages: ) Tj 65 0 Td /F1 8.5 Tf (PHP (8.x), JavaScript (ES6+), Python (intermediate), SQL (MySQL, PostgreSQL)) Tj -65 -10 Td
+/F2 8.5 Tf (Frameworks & Web: ) Tj 90 0 Td /F1 8.5 Tf (Laravel, Symfony, React.js, Smarty, WordPress (Custom plugins & themes)) Tj -90 -10 Td
+/F2 8.5 Tf (Backend Architecture: ) Tj 105 0 Td /F1 8.5 Tf (REST APIs, Event-Driven Services, Redis Queues, DTOs, Action-Service-Repository) Tj -105 -10 Td
+/F2 8.5 Tf (DevOps & Cloud: ) Tj 75 0 Td /F1 8.5 Tf (Docker, AWS (Fargate, S3, Lambda), DigitalOcean, Linux/UNIX, CI/CD (GitHub Actions)) Tj -75 -10 Td
+/F2 8.5 Tf (Fintech & Integrity: ) Tj 85 0 Td /F1 8.5 Tf (Double-entry Ledgers, Core Banking (Qore/BankOne), Payment Rails (Monnify, Sudo)) Tj -85 -10 Td
+/F2 8.5 Tf (Testing & Standards: ) Tj 95 0 Td /F1 8.5 Tf (PHPUnit, Feature Testing, ARCON Compliance, Vulnerability Remediation) Tj -95 -18 Td
+/F2 10 Tf
+(PROFESSIONAL EXPERIENCE) Tj
+0 -14 Td
+/F2 9.5 Tf (Application Support Analyst  -  MTN Nigeria) Tj 350 0 Td /F1 8.5 Tf (Sep 2022 - Aug 2026) Tj -350 -10 Td
+/F1 8.5 Tf (Nigeria | Enterprise Telecommunications) Tj
+0 -11 Td ( - Engineered and maintained mission-critical internal web platforms and backend applications using PHP and WordPress.) Tj
+0 -10 Td ( - Collaborated cross-functionally with UNIX, Network, Database, and Security teams to troubleshoot operational incidents.) Tj
+0 -10 Td ( - Optimized complex database queries and streamlined caching layers, reducing server compute overhead and query latency.) Tj
+0 -10 Td ( - Enforced strict ARCON-related regulatory controls, vulnerability assessments, and enterprise security compliance standards.) Tj
+0 -10 Td ( - Authored technical documentation, runbooks, and SOPs; mentored software engineering interns on production best practices.) Tj
+0 -14 Td
+/F2 9.5 Tf (Full-Stack Developer  -  Ritemate Technologies) Tj 350 0 Td /F1 8.5 Tf (2026) Tj -350 -10 Td
+/F1 8.5 Tf (Nigeria | Technology Consulting & Solutions) Tj
+0 -11 Td ( - Delivered resilient application solutions and continuous production support within an agile client-facing consultancy framework.) Tj
+0 -10 Td ( - Engineered full-stack features spanning backend microservices, modern frontend interfaces, automated builds, and server deployments.) Tj
+0 -10 Td ( - Partnered directly with client-side engineering teams to triage production incidents, implement hotfixes, and maintain system uptime.) Tj
+0 -14 Td
+/F2 9.5 Tf (Lead Backend Engineer  -  Retrust Microfinance Application) Tj 350 0 Td /F1 8.5 Tf (Apr 2025 - Apr 2026) Tj -350 -10 Td
+/F1 8.5 Tf (Remote | Digital Banking & Financial Services) Tj
+0 -11 Td ( - Architected and implemented the backend for a comprehensive microfinance banking system managing loans, savings, and wallets.) Tj
+0 -10 Td ( - Structured application logic using Action-Service-Repository patterns and Data Transfer Objects (DTOs) for maximum testability.) Tj
+0 -10 Td ( - Integrated Qore/BankOne core banking protocols and Monnify/Sudo rails for automated debiting, account creation, and batch transfers.) Tj
+0 -10 Td ( - Designed fault-tolerant financial flows implementing double-entry ledgers, idempotent webhook processors, and ACID transactions.) Tj
+0 -10 Td ( - Orchestrated Laravel Jobs and Redis queue pipelines to process asynchronous notifications, ledger reconciliations, and syncing tasks.) Tj
 ET
 endstream
 endobj
 5 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 7 0 R /Resources << /Font << /F1 5 0 R /F2 8 0 R >> >> >>
+endobj
+7 0 obj
+<< /Length 1350 >>
+stream
+BT
+36 745 Td
+/F2 9.5 Tf (Backend Engineer  -  Atlas Trailer) Tj 350 0 Td /F1 8.5 Tf (Dec 2021 - Feb 2023) Tj -350 -10 Td
+/F1 8.5 Tf (Remote (Canada) | Supply Chain & Logistics E-Commerce) Tj
+0 -11 Td ( - Architected scalable Laravel backend services powering high-volume customer booking systems and wholesale inventory workflows.) Tj
+0 -10 Td ( - Developed performant RESTful APIs and connected external payment gateways, courier tracking feeds, and enterprise ERP tools.) Tj
+0 -10 Td ( - Configured GitHub Actions CI/CD workflows and automated server maintenance on DigitalOcean, including automated database backups.) Tj
+0 -10 Td ( - Led peer code reviews, enforced PSR standards, performed query profiling, and mentored junior developers during agile sprint cycles.) Tj
+0 -14 Td
+/F2 9.5 Tf (Backend Engineer  -  Aladdin Digital) Tj 350 0 Td /F1 8.5 Tf (Apr 2021 - Mar 2022) Tj -350 -10 Td
+/F1 8.5 Tf (Remote | Digital Products & FinTech) Tj
+0 -11 Td ( - Designed and developed bespoke Laravel web applications coupled with dynamic, responsive client-side user interfaces.) Tj
+0 -10 Td ( - Integrated third-party APIs, merchant gateways, and webhook callbacks to support evolving multi-currency business models.) Tj
+0 -10 Td ( - Managed zero-downtime cloud deployments with robust SSL configurations, containerization, and regular security patching.) Tj
+0 -10 Td ( - Interfaced with product owners and stakeholders to translate complex business logic into efficient technical architectures.) Tj
+0 -18 Td
+/F2 10 Tf
+(SELECTED PROJECTS) Tj
+0 -12 Td
+/F2 9 Tf (Retrust Core Banking Infrastructure) Tj 220 0 Td /F1 8 Tf (Laravel | MySQL | Redis | Microfinance) Tj -220 -10 Td
+/F1 8.5 Tf (Designed an ACID-compliant double-entry ledger managing savings, peer-to-peer transfers, and multi-tier interest disbursements.) Tj
+0 -14 Td
+/F2 9 Tf (COC Unite Application) Tj 220 0 Td /F1 8 Tf (Laravel | React.js | WebSockets) Tj -220 -10 Td
+/F1 8.5 Tf (Engineered an interactive community platform featuring role-based access control (RBAC), live attendance logging, and notifications.) Tj
+0 -14 Td
+/F2 9 Tf (Blacklist Limited - Credit Management Engine) Tj 220 0 Td /F1 8 Tf (PHP | Laravel | Relational DB) Tj -220 -10 Td
+/F1 8.5 Tf (Constructed an automated credit-risk management engine that identifies delinquent accounts and enforces account restrictions.) Tj
+0 -14 Td
+/F2 9 Tf (CSMT Schools Digital Admission Portal) Tj 220 0 Td /F1 8 Tf (PHP | WordPress | DigitalOcean) Tj -220 -10 Td
+/F1 8.5 Tf (Automated candidate application intake, entrance exam credential generation, payment verification, and queued background emails.) Tj
+0 -14 Td
+/F2 9 Tf (Osamede.net Infrastructure & Client Platforms) Tj 220 0 Td /F1 8 Tf (PHP | Custom CMS | Linux) Tj -220 -10 Td
+/F1 8.5 Tf (Engineered corporate web platforms featuring custom plugin development, security hardening, automated backups, and speed tuning.) Tj
+0 -22 Td
+/F2 10 Tf (EDUCATION) Tj 270 0 Td (LEADERSHIP & COMMUNITY) Tj -270 -12 Td
+/F2 9 Tf (B.Sc. in Computer Science) Tj 270 0 Td (Digital Literacy Bootcamp Lead Organizer) Tj -270 -10 Td
+/F1 8.5 Tf (Nnamdi Azikiwe University  -  2018) Tj 270 0 Td (Facilitated 8-day free tech workshop in Lagos for 600+ youth.) Tj -270 -9 Td
+/F1 8 Tf (Second Class Upper Division (CGPA: 3.56/5.00)) Tj 270 -7 Td /F2 9 Tf (Chess in Slums Africa - Technical Volunteer) Tj -270 -10 Td
+0 -5 Td /F2 10 Tf (CERTIFICATIONS) Tj 270 5 Td /F1 8.5 Tf (Contributed pro-bono cloud architecture and admin tooling.) Tj -270 -15 Td
+/F2 8.5 Tf (ALX x Udacity Full Stack Program) Tj 180 0 Td /F1 8 Tf (2022) Tj -180 -9 Td
+/F1 8 Tf (Python, Flask, SQLAlchemy, PostgreSQL) Tj
+0 -10 Td
+/F2 8.5 Tf (Triplebyte Certified Software Engineer) Tj 180 0 Td /F1 8 Tf (2022) Tj -180 -9 Td
+/F1 8 Tf (Generalist Software Engineering) Tj
+0 -10 Td
+/F2 8.5 Tf (SlateCube Full Stack Web Development) Tj 180 0 Td /F1 8 Tf (2020) Tj -180 -9 Td
+/F1 8 Tf (HTML, CSS, JavaScript, Modern Web) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
 xref
-0 6
+0 9
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
-0000000115 00000 n 
-0000000244 00000 n 
-0000000486 00000 n 
+0000000118 00000 n 
+0000000250 00000 n 
+0000001750 00000 n 
+0000001810 00000 n 
+0000001942 00000 n 
+0000003342 00000 n 
 trailer
-<< /Size 6 /Root 1 0 R >>
+<< /Size 9 /Root 1 0 R >>
 startxref
-565
+3407
 %%EOF
