@@ -238,5 +238,30 @@ export const projects = [
     confidential: false,
     githubUrl: null,
     liveUrl: null
+  },
+  {
+    id: "trivia-app",
+    title: "Trivia & Quiz Application Engine",
+    tier: 3,
+    isFeatured: false,
+    category: "Web Application / Open Source",
+    industry: "Interactive Quiz & Assessment",
+    badge: "Public Repository",
+    shortDescription: "Interactive trivia application engine featuring dynamic quiz generation, state management, scoring algorithms, and category filters.",
+    overview: "A lightweight, interactive trivia assessment web application built to demonstrate clean front-end application logic, state management, timer management, score calculation, and API-driven question retrieval.",
+    contribution: "Architected application flow, state transitions, question evaluation logic, countdown timer hooks, and GitHub public repository setup.",
+    challenges: "Handling real-time answer evaluations, state reset between sessions, score persistence, and asynchronous question loading states cleanly.",
+    solution: "Structured modular component architecture with reactive state hooks, robust response validation, and responsive user feedback interfaces.",
+    technologies: ["JavaScript", "React.js", "REST APIs", "State Management", "CSS3 / Tailwind"],
+    highlights: [
+      "Dynamic question loading & category filtering",
+      "Real-time answer evaluation & score calculation engine",
+      "Responsive quiz UI with progress indicators & session reset",
+      "Public GitHub open-source repository"
+    ],
+    availability: "Public / Open Source Project",
+    confidential: false,
+    githubUrl: "https://github.com/tripletens/trivia-app",
+    liveUrl: null
   }
 ];
