@@ -1,5 +1,5 @@
 export const projects = [
-  // --- TIER 1: FEATURED PROJECT ---
+  // --- TIER 1: FEATURED COMMERCIAL SYSTEM ---
   {
     id: "retrust-microfinance",
     title: "Retrust Microfinance Application",
@@ -31,13 +31,13 @@ export const projects = [
       "ACID transactions & rollback safety",
       "Asynchronous queue processing"
     ],
-    availability: "Professional / Private Project",
+    availability: "Professional Client Project",
     confidential: true,
     githubUrl: null,
     liveUrl: null
   },
 
-  // --- TIER 2: MAJOR PROFESSIONAL APPLICATIONS ---
+  // --- TIER 2: MAJOR COMMERCIAL & ENTERPRISE PLATFORMS ---
   {
     id: "atlas-trailer",
     title: "Atlas Trailer",
@@ -58,7 +58,32 @@ export const projects = [
       "Automated database snapshots & backups",
       "DigitalOcean cloud deployment with automated CI/CD"
     ],
-    availability: "Professional / Private Project",
+    availability: "Professional Client Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+  {
+    id: "karakata-marketplace-api",
+    title: "Karakata Multi-Vendor Marketplace API",
+    tier: 2,
+    isFeatured: false,
+    category: "E-Commerce / Marketplace",
+    industry: "E-Commerce & Digital Commerce",
+    badge: "Commercial Platform",
+    shortDescription: "Multi-vendor e-commerce backend API handling product catalogs, vendor onboarding, order processing, and payment settlement workflows.",
+    overview: "A comprehensive multi-vendor marketplace backend system architected to support complex multi-merchant product management, escrow/payment dispatches, cart & checkout processing, vendor commissions, and order fulfillment tracking.",
+    contribution: "Engineered core RESTful APIs, database architecture, vendor balance management, role-based vendor dashboard access, and payment webhook integrations.",
+    challenges: "Handling concurrent order placements across separate vendor stores, calculating split payout commissions, and maintaining high database integrity during checkout spikes.",
+    solution: "Designed transactional order flow pipelines, automated payout ledger calculations using Laravel database transactions, integrated secure payment gateways, and configured Redis caching for fast product catalog indexing.",
+    technologies: ["PHP", "Laravel", "MySQL", "REST APIs", "Redis", "Payment Gateways", "Role-Based Access Control", "Queue Processing"],
+    highlights: [
+      "Multi-vendor product management & catalog engine",
+      "Automated order routing & vendor payout ledger calculation",
+      "Payment gateway webhook handling & instant order status updates",
+      "Role-based dashboard permissions for vendor store management"
+    ],
+    availability: "Professional Client Project",
     confidential: true,
     githubUrl: null,
     liveUrl: null
@@ -83,7 +108,7 @@ export const projects = [
       "Role-based access control & administrative permissions",
       "Modular backend architecture with clean service separation"
     ],
-    availability: "Professional / Private Project",
+    availability: "Professional Client Project",
     confidential: true,
     githubUrl: null,
     liveUrl: null
@@ -108,185 +133,9 @@ export const projects = [
       "High-accuracy debtor lookup and query optimization",
       "Data consistency mechanisms for multi-tenant queries"
     ],
-    availability: "Professional / Private Project",
+    availability: "Professional Client Project",
     confidential: true,
     githubUrl: null,
-    liveUrl: null
-  },
-  {
-    id: "csmt-schools-admission",
-    title: "CSMT Schools Admission System",
-    tier: 2,
-    isFeatured: false,
-    category: "Education Technology",
-    industry: "Education & Admissions",
-    badge: "Institutional Portal",
-    shortDescription: "Integrated school admission workflow supporting online applications, payment processing and scheduled examination credential generation.",
-    overview: "An automated admission management system handling candidate onboarding, online fee verification, entrance examination slip generation, and automated applicant communications.",
-    contribution: "Designed and implemented the complete end-to-end admission workflow, integrated payment gateway verification, automated PDF slip generation, and deployed the production system on DigitalOcean.",
-    challenges: "Preventing duplicate application slips, handling sudden spikes in applicant submissions during deadline windows, and ensuring reliable email dispatch.",
-    solution: "Implemented transactional applicant record creation, secure webhook callbacks for payment verification, asynchronous queueing for confirmation emails, and automated candidate exam seat allocation.",
-    technologies: ["Laravel", "PHP", "MySQL", "Payment Gateways", "PDF Generation", "DigitalOcean", "Mail Queues"],
-    highlights: [
-      "Online admission application portal",
-      "Payment gateway integration & instant receipt verification",
-      "Automated examination credential & slip generation",
-      "Asynchronous email delivery and candidate notifications"
-    ],
-    availability: "Professional / Private Project",
-    confidential: true,
-    githubUrl: null,
-    liveUrl: null
-  },
-
-  {
-    id: "karakata-marketplace-api",
-    title: "Karakata Multi-Vendor Marketplace API",
-    tier: 2,
-    isFeatured: false,
-    category: "E-Commerce / Marketplace",
-    industry: "E-Commerce & Digital Commerce",
-    badge: "Commercial Platform",
-    shortDescription: "Multi-vendor e-commerce backend API handling product catalogs, vendor onboarding, order processing, and payment settlement workflows.",
-    overview: "A comprehensive multi-vendor marketplace backend system architected to support complex multi-merchant product management, escrow/payment dispatches, cart & checkout processing, vendor commissions, and order fulfillment tracking.",
-    contribution: "Engineered core RESTful APIs, database architecture, vendor balance management, role-based vendor dashboard access, and payment webhook integrations.",
-    challenges: "Handling concurrent order placements across separate vendor stores, calculating split payout commissions, and maintaining high database integrity during checkout spikes.",
-    solution: "Designed transactional order flow pipelines, automated payout ledger calculations using Laravel database transactions, integrated secure payment gateways, and configured Redis caching for fast product catalog indexing.",
-    technologies: ["PHP", "Laravel", "MySQL", "REST APIs", "Redis", "Payment Gateways", "Role-Based Access Control", "Queue Processing"],
-    highlights: [
-      "Multi-vendor product management & catalog engine",
-      "Automated order routing & vendor payout ledger calculation",
-      "Payment gateway webhook handling & instant order status updates",
-      "Role-based dashboard permissions for vendor store management"
-    ],
-    availability: "Professional / Private Client Project",
-    confidential: true,
-    githubUrl: null,
-    liveUrl: null
-  },
-
-  // --- TIER 3: ADDITIONAL PROFESSIONAL WORK ---
-  {
-    id: "osamede-corporate",
-    title: "Osamede.net",
-    tier: 3,
-    isFeatured: false,
-    category: "Web Infrastructure",
-    industry: "Corporate Website",
-    badge: "Corporate Web",
-    shortDescription: "Developed and maintained a corporate website with focus on plugin optimization and server infrastructure.",
-    overview: "A fast corporate web platform structured with a focus on server-level performance, caching headers, clean PHP hooks, and lean plugin architecture.",
-    contribution: "Handled server infrastructure setup, custom PHP performance optimizations, and security hardening.",
-    challenges: "Reducing page load latency and eliminating bloated plugin overhead.",
-    solution: "Implemented custom theme adjustments, database table cleanups, object caching, and server-level Nginx tuning.",
-    technologies: ["WordPress", "PHP", "Nginx", "MySQL", "Server Infrastructure", "Caching"],
-    highlights: [
-      "Custom PHP optimization & theme tuning",
-      "Server infrastructure configuration",
-      "Database cleanup & query latency reduction"
-    ],
-    availability: "Professional Project",
-    confidential: true,
-    githubUrl: null,
-    liveUrl: null
-  },
-  {
-    id: "freelance-wordpress-architecture",
-    title: "Freelance WordPress Architecture",
-    tier: 3,
-    isFeatured: false,
-    category: "Web Engineering",
-    industry: "Real Estate, Hospitality & Consulting",
-    badge: "Client Deployments",
-    shortDescription: "Designed, developed and launched web platforms across real estate listing, luxury hospitality and B2B IT consulting using WordPress, Elementor and custom PHP.",
-    overview: "A portfolio of commercial web platforms engineered for diverse clients including Esther's Place UK (hospitality), Apex Prime Properties (real estate listing portal), and Comfortech Consultancy (B2B IT consulting).",
-    contribution: "Delivered custom PHP theme architectures, property lead capturing integrations, booking workflows, and server deployments with SSL and security policies.",
-    challenges: "Balancing client-friendly administrative editing capabilities with strict performance, responsiveness, and security standards.",
-    solution: "Architected lightweight custom templates, integrated third-party form and payment APIs, established SSL/security hardening, and automated regular backup snapshots.",
-    technologies: ["WordPress", "PHP", "MySQL", "SSL", "Security Hardening", "Performance Optimization"],
-    highlights: [
-      "Esther's Place UK — Hospitality booking & brand platform",
-      "Apex Prime Properties — Real estate showcase & lead generation portal",
-      "Comfortech Consultancy — B2B consulting showcase & lead generation",
-      "SSL provisioning, performance optimization & security hardening"
-    ],
-    availability: "Professional Client Projects",
-    confidential: true,
-    githubUrl: null,
-    liveUrl: null
-  },
-  {
-    id: "chess-in-slums-africa",
-    title: "Chess in Slums Africa",
-    tier: 3,
-    isFeatured: false,
-    category: "Nonprofit / Community",
-    industry: "Social Impact & Education",
-    badge: "Pro-Bono Engineering",
-    shortDescription: "Provided pro-bono development and DevOps support by hosting the organisation's website on AWS and engineering an internal administration dashboard.",
-    overview: "Engineering and infrastructure support for an internationally recognized non-profit organization dedicated to empowering children in vulnerable communities through chess and digital education.",
-    contribution: "Architected AWS hosting infrastructure, configured DNS and SSL certificates, and developed an internal administration dashboard to assist staff in managing operational activities.",
-    challenges: "Building a reliable, cost-effective infrastructure capable of weathering sudden traffic surges during international press and fundraising campaigns.",
-    solution: "Configured AWS cloud services with S3 asset offloading, CloudFront CDN edge caching, and a lightweight admin dashboard for internal recordkeeping.",
-    technologies: ["AWS", "DevOps", "Web Development", "Internal Dashboard", "S3", "CloudFront"],
-    highlights: [
-      "AWS cloud hosting & infrastructure configuration",
-      "Internal administration dashboard engineering",
-      "Pro-bono civic impact & community technology support"
-    ],
-    availability: "Community Project",
-    confidential: false,
-    githubUrl: null,
-    liveUrl: null
-  },
-  {
-    id: "trivia-app",
-    title: "Trivia & Quiz Application Engine",
-    tier: 3,
-    isFeatured: false,
-    category: "Web Application / Open Source",
-    industry: "Interactive Quiz & Assessment",
-    badge: "Public Repository",
-    shortDescription: "Interactive trivia application engine featuring dynamic quiz generation, state management, scoring algorithms, and category filters.",
-    overview: "A lightweight, interactive trivia assessment web application built to demonstrate clean front-end application logic, state management, timer management, score calculation, and API-driven question retrieval.",
-    contribution: "Architected application flow, state transitions, question evaluation logic, countdown timer hooks, and GitHub public repository setup.",
-    challenges: "Handling real-time answer evaluations, state reset between sessions, score persistence, and asynchronous question loading states cleanly.",
-    solution: "Structured modular component architecture with reactive state hooks, robust response validation, and responsive user feedback interfaces.",
-    technologies: ["JavaScript", "React.js", "REST APIs", "State Management", "CSS3 / Tailwind"],
-    highlights: [
-      "Dynamic question loading & category filtering",
-      "Real-time answer evaluation & score calculation engine",
-      "Responsive quiz UI with progress indicators & session reset",
-      "Public GitHub open-source repository"
-    ],
-    availability: "Public / Open Source Project",
-    confidential: false,
-    githubUrl: "https://github.com/tripletens/trivia-app",
-    liveUrl: null
-  },
-  {
-    id: "wpmedia-interview",
-    title: "WP Media Technical Assessment",
-    tier: 3,
-    isFeatured: false,
-    category: "PHP / Plugin Architecture",
-    industry: "WordPress Engineering & Benchmarking",
-    badge: "Public Repository",
-    shortDescription: "Technical assessment implementation showcasing custom PHP plugin development, object-oriented design, performance tuning, and standards enforcement.",
-    overview: "A dedicated PHP/WordPress technical assessment demonstrating advanced WordPress plugin architecture, custom hooks/filters, strict PSR code formatting, unit/integration testing, and performance optimization practices.",
-    contribution: "Engineered clean object-oriented PHP architecture, modular plugin code layout, automated testing routines, and comprehensive technical documentation.",
-    challenges: "Enforcing strict PSR coding standards, avoiding legacy global state clutter, and delivering optimal execution speeds during hook evaluations.",
-    solution: "Applied clean architecture principles, modern PHP 8.x features, automated testing, and isolated service classes for maintainability.",
-    technologies: ["PHP 8.x", "WordPress", "Custom Plugin Architecture", "OOP", "PHPUnit", "PSR Standards"],
-    highlights: [
-      "Modular Object-Oriented PHP plugin structure",
-      "Strict PSR coding standards & clean code conventions",
-      "Unit & integration testing suite setup",
-      "Public GitHub repository with technical documentation"
-    ],
-    availability: "Public / Open Source Project",
-    confidential: false,
-    githubUrl: "https://github.com/tripletens/wpmedia-interview",
     liveUrl: null
   },
   {
@@ -315,14 +164,41 @@ export const projects = [
     liveUrl: null
   },
   {
+    id: "csmt-schools-admission",
+    title: "CSMT Schools Admission System",
+    tier: 2,
+    isFeatured: false,
+    category: "Education Technology",
+    industry: "Education & Admissions",
+    badge: "Institutional Portal",
+    shortDescription: "Integrated school admission workflow supporting online applications, payment processing and scheduled examination credential generation.",
+    overview: "An automated admission management system handling candidate onboarding, online fee verification, entrance examination slip generation, and automated applicant communications.",
+    contribution: "Designed and implemented the complete end-to-end admission workflow, integrated payment gateway verification, automated PDF slip generation, and deployed the production system on DigitalOcean.",
+    challenges: "Preventing duplicate application slips, handling sudden spikes in applicant submissions during deadline windows, and ensuring reliable email dispatch.",
+    solution: "Implemented transactional applicant record creation, secure webhook callbacks for payment verification, asynchronous queueing for confirmation emails, and automated candidate exam seat allocation.",
+    technologies: ["Laravel", "PHP", "MySQL", "Payment Gateways", "PDF Generation", "DigitalOcean", "Mail Queues"],
+    highlights: [
+      "Online admission application portal",
+      "Payment gateway integration & instant receipt verification",
+      "Automated examination credential & slip generation",
+      "Asynchronous email delivery and candidate notifications"
+    ],
+    availability: "Professional Client Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+
+  // --- TIER 3: OPEN SOURCE & PUBLIC GITHUB REPOSITORIES ---
+  {
     id: "pharmproject",
     title: "PharmProject — AI Health & Prescription Management Platform",
-    tier: 2,
+    tier: 3,
     isFeatured: false,
     category: "Healthcare / HealthTech",
     industry: "HealthTech & Tele-Pharmacy",
     badge: "Public Repository",
-    shortDescription: "Comprehensive healthcare and tele-pharmacy platform featuring prescription tracking, AI-powered medical chatbot, drug interaction checking, and automated SMS/email reminders.",
+    shortDescription: "Healthcare and tele-pharmacy platform featuring prescription tracking, AI medical chatbot, drug interaction checker, and automated SMS/email reminders.",
     overview: "An integrated healthcare and prescription management platform engineered using Laravel, MySQL, and Docker. Provides patients and healthcare practitioners with digital prescription management, real-time drug interaction checking, AI medical consultation assistance, appointment scheduling, and automated cron-based SMS and email medication reminder notifications via Twilio.",
     contribution: "Architected the backend application logic, database schemas, drug interaction check algorithms, AI chatbot integration, Twilio SMS service handler, scheduled cron jobs for medication dispatches, and Docker environment setup.",
     challenges: "Ensuring zero-miss medication reminder schedules across varying time zones, handling multi-drug contraindication lookups, and structuring reliable integration with AI and SMS gateways.",
@@ -338,6 +214,129 @@ export const projects = [
     availability: "Public / Open Source Project",
     confidential: false,
     githubUrl: "https://github.com/tripletens/pharmproject",
+    liveUrl: null
+  },
+  {
+    id: "wpmedia-interview",
+    title: "WP Media Technical Assessment",
+    tier: 3,
+    isFeatured: false,
+    category: "PHP / Plugin Architecture",
+    industry: "WordPress Engineering & Benchmarking",
+    badge: "Public Repository",
+    shortDescription: "Technical assessment implementation showcasing custom PHP plugin development, object-oriented design, performance tuning, and standards enforcement.",
+    overview: "A dedicated PHP/WordPress technical assessment demonstrating advanced WordPress plugin architecture, custom hooks/filters, strict PSR code formatting, unit/integration testing, and performance optimization practices.",
+    contribution: "Engineered clean object-oriented PHP architecture, modular plugin code layout, automated testing routines, and comprehensive technical documentation.",
+    challenges: "Enforcing strict PSR coding standards, avoiding legacy global state clutter, and delivering optimal execution speeds during hook evaluations.",
+    solution: "Applied clean architecture principles, modern PHP 8.x features, automated testing, and isolated service classes for maintainability.",
+    technologies: ["PHP 8.x", "WordPress", "Custom Plugin Architecture", "OOP", "PHPUnit", "PSR Standards"],
+    highlights: [
+      "Modular Object-Oriented PHP plugin structure",
+      "Strict PSR coding standards & clean code conventions",
+      "Unit & integration testing suite setup",
+      "Public GitHub repository with technical documentation"
+    ],
+    availability: "Public / Open Source Project",
+    confidential: false,
+    githubUrl: "https://github.com/tripletens/wpmedia-interview",
+    liveUrl: null
+  },
+  {
+    id: "trivia-app",
+    title: "Trivia & Quiz Application Engine",
+    tier: 3,
+    isFeatured: false,
+    category: "Web Application / Open Source",
+    industry: "Interactive Quiz & Assessment",
+    badge: "Public Repository",
+    shortDescription: "Interactive trivia application engine featuring dynamic quiz generation, state management, scoring algorithms, and category filters.",
+    overview: "A lightweight, interactive trivia assessment web application built to demonstrate clean front-end application logic, state management, timer management, score calculation, and API-driven question retrieval.",
+    contribution: "Architected application flow, state transitions, question evaluation logic, countdown timer hooks, and GitHub public repository setup.",
+    challenges: "Handling real-time answer evaluations, state reset between sessions, score persistence, and asynchronous question loading states cleanly.",
+    solution: "Structured modular component architecture with reactive state hooks, robust response validation, and responsive user feedback interfaces.",
+    technologies: ["JavaScript", "React.js", "REST APIs", "State Management", "CSS3 / Tailwind"],
+    highlights: [
+      "Dynamic question loading & category filtering",
+      "Real-time answer evaluation & score calculation engine",
+      "Responsive quiz UI with progress indicators & session reset",
+      "Public GitHub open-source repository"
+    ],
+    availability: "Public / Open Source Project",
+    confidential: false,
+    githubUrl: "https://github.com/tripletens/trivia-app",
+    liveUrl: null
+  },
+  {
+    id: "osamede-corporate",
+    title: "Osamede.net",
+    tier: 3,
+    isFeatured: false,
+    category: "Web Infrastructure",
+    industry: "Corporate Website",
+    badge: "Corporate Web",
+    shortDescription: "Developed and maintained a corporate website with focus on plugin optimization and server infrastructure.",
+    overview: "A fast corporate web platform structured with a focus on server-level performance, caching headers, clean PHP hooks, and lean plugin architecture.",
+    contribution: "Handled server infrastructure setup, custom PHP performance optimizations, and security hardening.",
+    challenges: "Reducing page load latency and eliminating bloated plugin overhead.",
+    solution: "Implemented custom theme adjustments, database table cleanups, object caching, and server-level Nginx tuning.",
+    technologies: ["WordPress", "PHP", "Nginx", "MySQL", "Server Infrastructure", "Caching"],
+    highlights: [
+      "Custom PHP optimization & theme tuning",
+      "Server infrastructure configuration",
+      "Database cleanup & query latency reduction"
+    ],
+    availability: "Professional Client Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+  {
+    id: "freelance-wordpress-architecture",
+    title: "Freelance WordPress Architecture",
+    tier: 3,
+    isFeatured: false,
+    category: "Web Engineering",
+    industry: "Real Estate, Hospitality & Consulting",
+    badge: "Client Deployments",
+    shortDescription: "Designed, developed and launched web platforms across real estate listing, luxury hospitality and B2B IT consulting using WordPress, Elementor and custom PHP.",
+    overview: "A portfolio of commercial web platforms engineered for diverse clients including Esther's Place UK (hospitality), Apex Prime Properties (real estate listing portal), and Comfortech Consultancy (B2B IT consulting).",
+    contribution: "Delivered custom PHP theme architectures, property lead capturing integrations, booking workflows, and server deployments with SSL and security policies.",
+    challenges: "Balancing client-friendly administrative editing capabilities with strict performance, responsiveness, and security standards.",
+    solution: "Architected lightweight custom templates, integrated third-party form and payment APIs, established SSL/security hardening, and automated regular backup snapshots.",
+    technologies: ["WordPress", "PHP", "Custom Theme Dev", "MySQL", "SSL", "Security Hardening", "Performance Optimization"],
+    highlights: [
+      "Esther's Place UK — Hospitality booking & brand platform",
+      "Apex Prime Properties — Real estate showcase & lead generation portal",
+      "Comfortech Consultancy — B2B consulting showcase & lead generation",
+      "SSL provisioning, performance optimization & security hardening"
+    ],
+    availability: "Professional Client Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+  {
+    id: "chess-in-slums-africa",
+    title: "Chess in Slums Africa",
+    tier: 3,
+    isFeatured: false,
+    category: "Nonprofit / Community",
+    industry: "Social Impact & Education",
+    badge: "Pro-Bono Engineering",
+    shortDescription: "Provided pro-bono development and DevOps support by hosting the organisation's website on AWS and engineering an internal administration dashboard.",
+    overview: "Engineering and infrastructure support for an internationally recognized non-profit organization dedicated to empowering children in vulnerable communities through chess and digital education.",
+    contribution: "Architected AWS hosting infrastructure, configured DNS and SSL certificates, and developed an internal administration dashboard to assist staff in managing operational activities.",
+    challenges: "Building a reliable, cost-effective infrastructure capable of weathering sudden traffic surges during international press and fundraising campaigns.",
+    solution: "Configured AWS cloud services with S3 asset offloading, CloudFront CDN edge caching, and a lightweight admin dashboard for internal recordkeeping.",
+    technologies: ["AWS", "DevOps", "Web Development", "Internal Dashboard", "S3", "CloudFront"],
+    highlights: [
+      "AWS cloud hosting & infrastructure configuration",
+      "Internal administration dashboard engineering",
+      "Pro-bono civic impact & community technology support"
+    ],
+    availability: "Community Project",
+    confidential: false,
+    githubUrl: null,
     liveUrl: null
   },
   {
