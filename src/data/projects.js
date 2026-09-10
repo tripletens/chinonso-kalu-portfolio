@@ -1,0 +1,216 @@
+export const projects = [
+  // --- TIER 1: FEATURED PROJECT ---
+  {
+    id: "retrust-microfinance",
+    title: "Retrust Microfinance Application",
+    tier: 1,
+    isFeatured: true,
+    category: "Fintech / Microfinance",
+    industry: "Fintech / Core Banking",
+    badge: "Featured Project",
+    shortDescription: "Backend platform for a microfinance application supporting loans, savings, digital wallets, inter-bank transfers and financial transaction workflows.",
+    overview: "A comprehensive microfinance banking backend built to power core financial services—including tiered savings schemes, micro-loan origination and repayment schedules, digital wallets, automated debit mandates, and inter-bank transfers through integrated core banking infrastructure.",
+    contribution: "Served as Lead Backend Engineer, designing the overall application architecture, database schemas, financial transaction boundaries, and multi-provider integrations. Built the core business logic using the Action-Service-Repository pattern with strict DTO boundaries.",
+    challenges: "Financial applications require absolute transaction consistency, atomic ledger operations, resilience against external API timeouts, and asynchronous handling of webhook events without duplicate account balance mutations.",
+    solution: "Implemented double-entry bookkeeping ledger concepts with ACID database transactions and automated rollbacks. Integrated Qore and BankOne core banking backbones alongside Monnify and Sudo payment rails with idempotent webhook handling and Redis-backed queue workers for background reconciliation.",
+    technologies: ["PHP", "Laravel", "Action-Service-Repository", "DTOs", "Redis", "MySQL", "Qore / BankOne", "Monnify", "Sudo", "PHPUnit"],
+    highlights: [
+      "Double-entry ledger accounting model",
+      "ACID database transactions & rollbacks",
+      "Core banking integrations (Qore & BankOne)",
+      "Payment gateway & debit rail integrations (Monnify, Sudo)",
+      "Idempotent webhook processing",
+      "Redis queue workers for balance synchronization"
+    ],
+    engineeringFocus: [
+      "Financial transaction processing",
+      "Double-entry ledger architecture",
+      "Core banking integration",
+      "Payment gateway integration",
+      "Webhook processing & idempotency",
+      "ACID transactions & rollback safety",
+      "Asynchronous queue processing"
+    ],
+    availability: "Professional / Private Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+
+  // --- TIER 2: MAJOR PROFESSIONAL APPLICATIONS ---
+  {
+    id: "atlas-trailer",
+    title: "Atlas Trailer",
+    tier: 2,
+    isFeatured: false,
+    category: "Logistics / Commerce",
+    industry: "Logistics & Fleet Booking",
+    badge: "Commercial Platform",
+    shortDescription: "Backend services supporting booking and wholesale order workflows for a Canadian logistics and commerce platform.",
+    overview: "A high-volume logistics and booking platform handling commercial trailer orders, custom wholesale configurations, fleet availability, and transaction processing.",
+    contribution: "Engineered core backend APIs, automated booking workflows, payment gateway integrations, and reliable database backup routines.",
+    challenges: "Handling concurrent wholesale booking schedules, third-party logistics data syncing, and maintaining high uptime for commercial client transactions.",
+    solution: "Constructed modular REST APIs with robust validation, deployed automated CI/CD pipelines to DigitalOcean droplets, implemented scheduled database snapshots, and optimized database queries for inventory lookups.",
+    technologies: ["Laravel", "PHP", "REST APIs", "DigitalOcean", "CI/CD", "Payment Gateways", "Logistics APIs", "MySQL", "SSL"],
+    highlights: [
+      "Wholesale order processing engine",
+      "Commercial booking calendar & availability API",
+      "Automated database snapshots & backups",
+      "DigitalOcean cloud deployment with automated CI/CD"
+    ],
+    availability: "Professional / Private Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+  {
+    id: "coc-unite",
+    title: "COC Unite Application",
+    tier: 2,
+    isFeatured: false,
+    category: "Community / Platform",
+    industry: "Community & Church Management",
+    badge: "Community Platform",
+    shortDescription: "A church community platform built to manage groups, events, member directory and attendance.",
+    overview: "An integrated web and community management portal designed for multi-branch organizations to manage structured groups, event attendance tracking, real-time member announcements, and administrative workflows.",
+    contribution: "Built the backend architecture and modular services using Laravel, created RESTful API endpoints for web and mobile clients, and developed responsive administration interfaces.",
+    challenges: "Designing flexible role-based access control (RBAC) accommodating hierarchical administrative privileges across multiple organizational branches while ensuring real-time notification delivery.",
+    solution: "Structured a modular backend architecture with granular permission policies, optimized member search queries, and implemented decoupled event listeners for notification dispatches.",
+    technologies: ["Laravel", "React.js", "MySQL", "REST APIs", "RBAC", "WebSockets / Notifications"],
+    highlights: [
+      "Multi-branch group and membership management",
+      "Event scheduling & digital attendance logging",
+      "Role-based access control & administrative permissions",
+      "Modular backend architecture with clean service separation"
+    ],
+    availability: "Professional / Private Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+  {
+    id: "blacklist-credit-management",
+    title: "Blacklist Limited Credit Management System",
+    tier: 2,
+    isFeatured: false,
+    category: "Credit Management",
+    industry: "Credit Assessment & Risk",
+    badge: "Enterprise System",
+    shortDescription: "Credit management platform used to track, manage and restrict accounts with outstanding obligations.",
+    overview: "A specialized risk assessment and account restriction system enabling organizations to catalog delinquent records, enforce underwriting restrictions, and monitor debtor settlement workflows.",
+    contribution: "Developed the core backend business logic, database operations, record verification queries, and compliance audit trail mechanisms.",
+    challenges: "Ensuring zero record discrepancies and strict data integrity when querying and tagging restricted borrower records across institutional participants.",
+    solution: "Utilized strict relational constraints, transactional database operations, comprehensive audit trails, and indexed queries to deliver sub-second debtor lookups and automated restriction updates.",
+    technologies: ["PHP", "Laravel", "MySQL", "Relational Database Design", "Audit Logging", "REST APIs"],
+    highlights: [
+      "Restricted account registry and risk tagging",
+      "Audit trail tracking all modifications and queries",
+      "High-accuracy debtor lookup and query optimization",
+      "Data consistency mechanisms for multi-tenant queries"
+    ],
+    availability: "Professional / Private Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+  {
+    id: "csmt-schools-admission",
+    title: "CSMT Schools Admission System",
+    tier: 2,
+    isFeatured: false,
+    category: "Education Technology",
+    industry: "Education & Admissions",
+    badge: "Institutional Portal",
+    shortDescription: "Integrated school admission workflow supporting online applications, payment processing and scheduled examination credential generation.",
+    overview: "An automated admission management system handling candidate onboarding, online fee verification, entrance examination slip generation, and automated applicant communications.",
+    contribution: "Designed and implemented the complete end-to-end admission workflow, integrated payment gateway verification, automated PDF slip generation, and deployed the production system on DigitalOcean.",
+    challenges: "Preventing duplicate application slips, handling sudden spikes in applicant submissions during deadline windows, and ensuring reliable email dispatch.",
+    solution: "Implemented transactional applicant record creation, secure webhook callbacks for payment verification, asynchronous queueing for confirmation emails, and automated candidate exam seat allocation.",
+    technologies: ["Laravel", "PHP", "MySQL", "Payment Gateways", "PDF Generation", "DigitalOcean", "Mail Queues"],
+    highlights: [
+      "Online admission application portal",
+      "Payment gateway integration & instant receipt verification",
+      "Automated examination credential & slip generation",
+      "Asynchronous email delivery and candidate notifications"
+    ],
+    availability: "Professional / Private Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+
+  // --- TIER 3: ADDITIONAL PROFESSIONAL WORK ---
+  {
+    id: "osamede-corporate",
+    title: "Osamede.net",
+    tier: 3,
+    isFeatured: false,
+    category: "Web Infrastructure",
+    industry: "Corporate Website",
+    badge: "Corporate Web",
+    shortDescription: "Developed and maintained a corporate website with focus on plugin optimization and server infrastructure.",
+    overview: "A fast corporate web platform structured with a focus on server-level performance, caching headers, clean PHP hooks, and lean plugin architecture.",
+    contribution: "Handled server infrastructure setup, custom PHP performance optimizations, and security hardening.",
+    challenges: "Reducing page load latency and eliminating bloated plugin overhead.",
+    solution: "Implemented custom theme adjustments, database table cleanups, object caching, and server-level Nginx tuning.",
+    technologies: ["WordPress", "PHP", "Nginx", "MySQL", "Server Infrastructure", "Caching"],
+    highlights: [
+      "Custom PHP optimization & theme tuning",
+      "Server infrastructure configuration",
+      "Database cleanup & query latency reduction"
+    ],
+    availability: "Professional Project",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+  {
+    id: "freelance-wordpress-architecture",
+    title: "Freelance WordPress Architecture",
+    tier: 3,
+    isFeatured: false,
+    category: "Web Engineering",
+    industry: "Real Estate, Hospitality & Consulting",
+    badge: "Client Deployments",
+    shortDescription: "Designed, developed and launched web platforms across real estate listing, luxury hospitality and B2B IT consulting using WordPress, Elementor and custom PHP.",
+    overview: "A portfolio of commercial web platforms engineered for diverse clients including Esther's Place UK (hospitality), Apex Prime Properties (real estate listing portal), and Comfortech Consultancy (B2B IT consulting).",
+    contribution: "Delivered custom PHP theme architectures, property lead capturing integrations, booking workflows, and server deployments with SSL and security policies.",
+    challenges: "Balancing client-friendly administrative editing capabilities with strict performance, responsiveness, and security standards.",
+    solution: "Architected lightweight custom templates, integrated third-party form and payment APIs, established SSL/security hardening, and automated regular backup snapshots.",
+    technologies: ["WordPress", "PHP", "Custom Theme Dev", "MySQL", "SSL", "Security Hardening", "Performance Optimization"],
+    highlights: [
+      "Esther's Place UK — Hospitality booking & brand platform",
+      "Apex Prime Properties — Real estate showcase & lead generation portal",
+      "Comfortech Consultancy — B2B consulting showcase & lead generation",
+      "SSL provisioning, performance optimization & security hardening"
+    ],
+    availability: "Professional Client Projects",
+    confidential: true,
+    githubUrl: null,
+    liveUrl: null
+  },
+  {
+    id: "chess-in-slums-africa",
+    title: "Chess in Slums Africa",
+    tier: 3,
+    isFeatured: false,
+    category: "Nonprofit / Community",
+    industry: "Social Impact & Education",
+    badge: "Pro-Bono Engineering",
+    shortDescription: "Provided pro-bono development and DevOps support by hosting the organisation's website on AWS and engineering an internal administration dashboard.",
+    overview: "Engineering and infrastructure support for an internationally recognized non-profit organization dedicated to empowering children in vulnerable communities through chess and digital education.",
+    contribution: "Architected AWS hosting infrastructure, configured DNS and SSL certificates, and developed an internal administration dashboard to assist staff in managing operational activities.",
+    challenges: "Building a reliable, cost-effective infrastructure capable of weathering sudden traffic surges during international press and fundraising campaigns.",
+    solution: "Configured AWS cloud services with S3 asset offloading, CloudFront CDN edge caching, and a lightweight admin dashboard for internal recordkeeping.",
+    technologies: ["AWS", "DevOps", "Web Development", "Internal Dashboard", "S3", "CloudFront"],
+    highlights: [
+      "AWS cloud hosting & infrastructure configuration",
+      "Internal administration dashboard engineering",
+      "Pro-bono civic impact & community technology support"
+    ],
+    availability: "Community Project",
+    confidential: false,
+    githubUrl: null,
+    liveUrl: null
+  }
+];

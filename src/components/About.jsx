@@ -1,6 +1,6 @@
 import React from 'react';
-import { personalInfo } from '../data/portfolioData';
-import { Code2, Server, ShieldCheck, Wrench } from 'lucide-react';
+import { profile } from '../data/profile';
+import { Server, Activity, ShieldCheck, Cpu } from 'lucide-react';
 
 export default function About() {
   return (
@@ -8,17 +8,17 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400 mb-2">
-            <span>About Me</span>
+            <span>Engineering Background</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Engineering with a focus on real-world reliability.
+            About Me
           </h2>
         </div>
 
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           {/* Main Narrative Paragraphs */}
-          <div className="lg:col-span-8 space-y-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-            {personalInfo.about.map((paragraph, idx) => (
+          <div className="lg:col-span-8 space-y-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
+            {profile.aboutNarrative.map((paragraph, idx) => (
               <p key={idx}>
                 {paragraph}
               </p>
@@ -33,9 +33,9 @@ export default function About() {
                   <Server className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Backend Systems</h3>
+                  <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Backend Architecture</h3>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                    Structuring clean, maintainable APIs, database queries, and business logic.
+                    Clean Architecture, Action-Service-Repository, DTOs, and testable business logic.
                   </p>
                 </div>
               </div>
@@ -44,12 +44,12 @@ export default function About() {
             <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60">
               <div className="flex items-start gap-3">
                 <div className="p-2 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400 mt-0.5">
-                  <Wrench className="w-4 h-4" />
+                  <Activity className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Production Support</h3>
+                  <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Production & Support</h3>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                    Troubleshooting real-world issues, analyzing logs, and incident recovery.
+                    Root-cause incident analysis, log inspection, query tuning, and cross-team collaboration.
                   </p>
                 </div>
               </div>
@@ -61,9 +61,9 @@ export default function About() {
                   <ShieldCheck className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Security Remediation</h3>
+                  <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Integrations & Data</h3>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                    Addressing vulnerability scanner findings, input hygiene, and access control.
+                    Payment gateways, core banking backbones, transactional safety, and queues.
                   </p>
                 </div>
               </div>

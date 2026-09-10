@@ -1,14 +1,14 @@
 import React from 'react';
-import { focusAreas } from '../data/portfolioData';
-import { Server, Layout, Activity, Network, Database, Terminal } from 'lucide-react';
+import { profile } from '../data/profile';
+import { Server, Network, Coins, Activity, Terminal, Database } from 'lucide-react';
 
 const iconMap = {
   Server,
-  Layout,
-  Activity,
   Network,
-  Database,
+  Coins,
+  Activity,
   Terminal,
+  Database,
 };
 
 export default function FocusAreas() {
@@ -17,18 +17,18 @@ export default function FocusAreas() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-12">
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400 mb-2">
-            <span>Engineering Focus</span>
+            <span>Specialisations</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
-            What I Work On
+            What I Do
           </h2>
           <p className="mt-3 text-base text-slate-600 dark:text-slate-300">
-            Practical domains where I apply software engineering principles, system analysis, and reliable tooling.
+            Core engineering areas where I build, integrate, troubleshoot, and support production systems.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {focusAreas.map((area) => {
+          {profile.specialisations.map((area) => {
             const IconComponent = iconMap[area.icon] || Server;
             return (
               <div

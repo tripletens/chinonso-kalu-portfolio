@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { personalInfo } from '../data/portfolioData';
-import { Mail, Copy, Check, Send, MessageSquare } from 'lucide-react';
+import { profile } from '../data/profile';
+import { Mail, Copy, Check, Send, MessageSquare, ArrowUpRight } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
 export default function Contact() {
@@ -14,19 +14,18 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText(personalInfo.email);
+    navigator.clipboard.writeText(profile.email);
     setCopied(true);
     setTimeout(() => setCopied(false), 2500);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Build mailto URL cleanly without backend requirement
     const mailtoSubject = encodeURIComponent(formData.subject || `Inquiry from ${formData.name}`);
     const mailtoBody = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
-    window.location.href = `mailto:${personalInfo.email}?subject=${mailtoSubject}&body=${mailtoBody}`;
+    window.location.href = `mailto:${profile.email}?subject=${mailtoSubject}&body=${mailtoBody}`;
     setSubmitted(true);
   };
 
@@ -38,31 +37,31 @@ export default function Contact() {
           <div className="lg:col-span-6 space-y-6">
             <div>
               <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400 mb-2">
-                <span>Get In Touch</span>
+                <span>Direct Channels</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
-                Let's build something useful.
+                Have a project or opportunity?
               </h2>
             </div>
 
-            <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-              If you are hiring for a software engineering role, working on a technical project, or need help improving an existing application, feel free to get in touch.
+            <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              I'm open to conversations around software engineering opportunities, backend development, technical projects and practical software solutions.
             </p>
 
             <div className="space-y-4 pt-2">
               {/* Email Card with Copy Action */}
-              <div className="p-4 rounded-xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-4 shadow-xs">
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-4 shadow-xs">
                 <div className="flex items-center gap-3 overflow-hidden">
-                  <div className="p-2.5 rounded-lg bg-primary-50 dark:bg-primary-950/60 text-primary-600 dark:text-primary-400">
+                  <div className="p-2.5 rounded-lg bg-primary-50 dark:bg-primary-950/60 text-primary-600 dark:text-primary-400 shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div className="overflow-hidden">
-                    <span className="text-xs text-slate-400 dark:text-slate-500 font-medium block">Email Address</span>
+                    <span className="text-xs text-slate-400 dark:text-slate-500 font-medium block">Direct Email</span>
                     <a
-                      href={`mailto:${personalInfo.email}`}
+                      href={`mailto:${profile.email}`}
                       className="text-sm font-semibold text-slate-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 truncate block transition-colors"
                     >
-                      {personalInfo.email}
+                      {profile.email}
                     </a>
                   </div>
                 </div>
@@ -70,7 +69,7 @@ export default function Contact() {
                 <button
                   onClick={handleCopyEmail}
                   className="px-3 py-1.5 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors flex items-center gap-1.5 shrink-0"
-                  aria-label="Copy email address to clipboard"
+                  aria-label="Copy email address"
                 >
                   {copied ? (
                     <>
@@ -88,53 +87,49 @@ export default function Contact() {
 
               {/* LinkedIn Card */}
               <a
-                href={personalInfo.linkedin}
+                href={profile.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-4 rounded-xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 flex items-center justify-between gap-4 shadow-xs transition-colors"
+                className="group p-4 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 flex items-center justify-between gap-4 shadow-xs transition-colors"
               >
                 <div className="flex items-center gap-3">
-                  <div className="p-2.5 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-[#0a66c2]">
+                  <div className="p-2.5 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-[#0a66c2] shrink-0">
                     <LinkedinIcon className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-xs text-slate-400 dark:text-slate-500 font-medium block">LinkedIn</span>
                     <span className="text-sm font-semibold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                      linkedin.com/in/{personalInfo.linkedinUsername}
+                      linkedin.com/in/{profile.linkedinUsername}
                     </span>
                   </div>
                 </div>
-                <span className="text-xs font-medium text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300">
-                  Connect →
-                </span>
+                <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-primary-600 transition-colors" />
               </a>
 
               {/* GitHub Card */}
               <a
-                href={personalInfo.github}
+                href={profile.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-4 rounded-xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 flex items-center justify-between gap-4 shadow-xs transition-colors"
+                className="group p-4 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 flex items-center justify-between gap-4 shadow-xs transition-colors"
               >
                 <div className="flex items-center gap-3">
-                  <div className="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200">
+                  <div className="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 shrink-0">
                     <GithubIcon className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-xs text-slate-400 dark:text-slate-500 font-medium block">GitHub</span>
                     <span className="text-sm font-semibold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                      github.com/{personalInfo.githubUsername}
+                      github.com/{profile.githubUsername}
                     </span>
                   </div>
                 </div>
-                <span className="text-xs font-medium text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300">
-                  Follow →
-                </span>
+                <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-primary-600 transition-colors" />
               </a>
             </div>
           </div>
 
-          {/* Recruiter / Direct Message Form */}
+          {/* Direct Inquiry Form */}
           <div className="lg:col-span-6">
             <div className="p-6 sm:p-8 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-xs">
               <div className="flex items-center gap-2 mb-6">
@@ -184,7 +179,7 @@ export default function Contact() {
                     id="subject"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    placeholder="Engineering Role / Project Collaboration"
+                    placeholder="Engineering Role / Backend Project"
                     className="w-full px-3.5 py-2.5 rounded-lg text-sm bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 focus:bg-white dark:focus:bg-slate-900 transition-colors"
                   />
                 </div>
@@ -199,7 +194,7 @@ export default function Contact() {
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Briefly describe the role, technical requirement, or question..."
+                    placeholder="Briefly describe the engineering role, platform requirement, or inquiry..."
                     className="w-full px-3.5 py-2.5 rounded-lg text-sm bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 focus:bg-white dark:focus:bg-slate-900 transition-colors resize-none"
                   />
                 </div>
@@ -215,7 +210,7 @@ export default function Contact() {
 
               {submitted && (
                 <p className="mt-3 text-xs text-emerald-600 dark:text-emerald-400 text-center font-medium">
-                  Your email client should open with your prefilled message.
+                  Your email client should open with your prefilled message to {profile.email}.
                 </p>
               )}
             </div>

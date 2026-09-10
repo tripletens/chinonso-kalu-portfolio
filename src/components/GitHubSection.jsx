@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { personalInfo } from '../data/portfolioData';
-import { Star, GitFork, ExternalLink, ArrowUpRight, FolderGit2 } from 'lucide-react';
+import { profile } from '../data/profile';
+import { Star, GitFork, ArrowUpRight, FolderGit2 } from 'lucide-react';
 import { GithubIcon } from './Icons';
 
 export default function GitHubSection() {
@@ -14,7 +14,7 @@ export default function GitHubSection() {
     async function fetchRepos() {
       try {
         const response = await fetch(
-          `https://api.github.com/users/${personalInfo.githubUsername}/repos?sort=updated&per_page=6`,
+          `https://api.github.com/users/${profile.githubUsername}/repos?sort=updated&per_page=6`,
           {
             headers: {
               Accept: 'application/vnd.github.v3+json',
@@ -28,7 +28,6 @@ export default function GitHubSection() {
 
         const data = await response.json();
         if (isMounted && Array.isArray(data)) {
-          // Filter out forks if needed, or sort by most recently updated
           setRepos(data.slice(0, 4));
         }
       } catch (err) {
@@ -56,31 +55,31 @@ export default function GitHubSection() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400 mb-2">
               <GithubIcon className="w-3.5 h-3.5" />
-              <span>Open Source & Public Repositories</span>
+              <span>Open Source & Experiments</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
-              Code, experiments and engineering projects
+              Explore My Code
             </h2>
             <p className="mt-3 text-base text-slate-600 dark:text-slate-300">
-              I use GitHub to document projects, experiment with technologies and build practical examples of software engineering concepts.
+              I use GitHub to document software projects, experiments and practical implementations of engineering concepts.
             </p>
           </div>
 
           <div>
             <a
-              href={personalInfo.github}
+              href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 dark:bg-primary-600 dark:hover:bg-primary-500 rounded-lg shadow-xs transition-colors group"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 dark:bg-primary-600 dark:hover:bg-primary-500 rounded-lg shadow-xs transition-colors group"
             >
               <GithubIcon className="w-4 h-4" />
-              <span>View GitHub</span>
-              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              <span>Visit GitHub</span>
+              <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
           </div>
         </div>
 
-        {/* Live Repositories or Fallback Display */}
+        {/* Repositories or Fallback */}
         {loading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[1, 2].map((n) => (
@@ -114,7 +113,7 @@ export default function GitHubSection() {
                   </div>
 
                   <p className="mt-2 text-xs text-slate-600 dark:text-slate-300 line-clamp-2">
-                    {repo.description || "Public repository and engineering exploration."}
+                    {repo.description || "Public repository and backend exploration."}
                   </p>
                 </div>
 
@@ -138,28 +137,27 @@ export default function GitHubSection() {
             ))}
           </div>
         ) : (
-          /* Graceful Fallback Card when API is rate-limited or offline */
-          <div className="p-8 rounded-xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 text-center space-y-4">
-            <div className="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 flex items-center justify-center mx-auto">
-              <FolderGit2 className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+          <div className="p-8 rounded-xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 text-center space-y-3">
+            <div className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 flex items-center justify-center mx-auto">
+              <FolderGit2 className="w-5 h-5 text-primary-600 dark:text-primary-400" />
             </div>
-            <div className="max-w-md mx-auto">
-              <h3 className="text-base font-semibold text-slate-900 dark:text-white">
-                Explore Repositories on GitHub
-              </h3>
-              <p className="mt-1 text-xs text-slate-600 dark:text-slate-300">
-                Browse code repositories, backend utilities, and project source code directly on GitHub at <strong>github.com/{personalInfo.githubUsername}</strong>.
-              </p>
+            <h3 className="text-sm font-bold text-slate-900 dark:text-white">
+              Public Repositories on GitHub
+            </h3>
+            <p className="text-xs text-slate-600 dark:text-slate-300 max-w-md mx-auto">
+              Inspect source code, experiments, and technical implementations at <strong>github.com/{profile.githubUsername}</strong>.
+            </p>
+            <div className="pt-2">
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary-600 dark:text-primary-400 hover:underline"
+              >
+                <span>Visit @{profile.githubUsername}</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
             </div>
-            <a
-              href={personalInfo.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary-600 dark:text-primary-400 hover:underline"
-            >
-              <span>Visit @{personalInfo.githubUsername}</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
           </div>
         )}
       </div>

@@ -1,4 +1,5 @@
-import { personalInfo } from '../data/portfolioData';
+import React from 'react';
+import { profile } from '../data/profile';
 import { ArrowUp } from 'lucide-react';
 
 export default function Footer() {
@@ -13,17 +14,17 @@ export default function Footer() {
           {/* Brand / Title */}
           <div className="text-center md:text-left">
             <span className="font-bold text-base text-slate-900 dark:text-white">
-              {personalInfo.name}
+              {profile.name}
             </span>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-              {personalInfo.title}
+              {profile.title}
             </p>
           </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-6 text-sm">
             <a
-              href={personalInfo.github}
+              href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
@@ -32,7 +33,7 @@ export default function Footer() {
             </a>
             <span className="text-slate-300 dark:text-slate-700">•</span>
             <a
-              href={personalInfo.linkedin}
+              href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
@@ -41,7 +42,7 @@ export default function Footer() {
             </a>
             <span className="text-slate-300 dark:text-slate-700">•</span>
             <a
-              href={`mailto:${personalInfo.email}`}
+              href={`mailto:${profile.email}`}
               className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
             >
               Email
@@ -60,7 +61,7 @@ export default function Footer() {
 
         {/* Copyright Line */}
         <div className="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800/60 text-center text-xs text-slate-400 dark:text-slate-500">
-          <p>© 2026 {personalInfo.name}. Built with React.</p>
+          <p>© 2026 {profile.name}</p>
         </div>
       </div>
     </footer>
