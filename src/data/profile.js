@@ -9,7 +9,7 @@ export const profile = {
   githubUsername: "tripletens",
   linkedin: "https://linkedin.com/in/iamkaluchinonso",
   linkedinUsername: "iamkaluchinonso",
-  resumePath: "/resume.pdf",
+  resumePath: "/Chinonso Kalu - Senior Backend Software Engineer Resume.pdf",
   headline: "Software Engineer building reliable backend systems and production applications.",
   subHeadline: "PHP / Laravel • APIs • Databases • Integrations • Cloud",
   description: "Software Engineer with 5+ years of hands-on backend development experience, building and supporting web applications across fintech, logistics, education and enterprise environments.",
