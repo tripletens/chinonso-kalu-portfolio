@@ -296,8 +296,8 @@ export const projects = [
     isFeatured: false,
     category: "Analytics & Data Visualization",
     industry: "Esports & Gaming Analytics",
-    badge: "Public Repository",
-    shortDescription: "Esports analytics platform providing match performance tracking, tournament metrics, player statistics, and real-time visualization dashboards.",
+    badge: "Client Project",
+    shortDescription: "Esports analytics platform providing match performance tracking, tournament metrics, player statistics, and real-time visualization dashboards for a client.",
     overview: "A comprehensive analytics platform designed to ingest, process, and display performance data for competitive esports tournaments. Features match telemetry visualizations, win/loss ratio distributions, player performance scoring, and comparative team statistics.",
     contribution: "Engineered backend data aggregation pipelines, RESTful API endpoints for telemetry metrics, dynamic data transformation algorithms, and responsive chart/dashboard layouts.",
     challenges: "Processing multi-parameter match dataset logs, optimizing aggregation queries for responsive rendering, and maintaining interactive UI updates across complex metric filters.",
@@ -307,11 +307,36 @@ export const projects = [
       "Real-time esports match statistics & leaderboard metrics",
       "Interactive data visualization charts & team comparison views",
       "Optimized metric aggregation pipelines & backend data filtering",
-      "Public GitHub repository"
+      "Client project development & architecture"
+    ],
+    availability: "Professional Client Project",
+    confidential: false,
+    githubUrl: "https://github.com/tripletens/easport-analytics",
+    liveUrl: null
+  },
+  {
+    id: "pharmproject",
+    title: "PharmProject — Pharmacy & Inventory Management System",
+    tier: 2,
+    isFeatured: false,
+    category: "Healthcare / Inventory",
+    industry: "HealthTech & Inventory Control",
+    badge: "Public Repository",
+    shortDescription: "Pharmacy inventory and sales tracking platform managing prescription dispatches, stock alerts, supplier orders, and audit logging.",
+    overview: "A specialized healthcare inventory management system built for pharmacies and medical suppliers to track pharmaceutical stock levels, manage batch expiration dates, process point-of-sale transactions, and maintain compliance recordkeeping.",
+    contribution: "Engineered core relational database schema, inventory mutation tracking algorithms, low-stock and expiry notification alerts, and REST API endpoints.",
+    challenges: "Preventing inventory stock-outs, handling multi-batch medication tracking with different expiration dates, and ensuring accurate point-of-sale transaction logging.",
+    solution: "Designed FIFO stock allocation logic, indexed database queries for rapid barcode/medication lookup, and transactional audit trails for store inventory movements.",
+    technologies: ["PHP", "Laravel", "MySQL", "REST APIs", "Inventory Management", "Bootstrap / Tailwind"],
+    highlights: [
+      "Batch medication tracking & expiration alert system",
+      "Point-of-sale (POS) transaction processing engine",
+      "Low-stock inventory alerts & automated purchase orders",
+      "Public GitHub open-source repository"
     ],
     availability: "Public / Open Source Project",
     confidential: false,
-    githubUrl: "https://github.com/tripletens/easport-analytics",
+    githubUrl: "https://github.com/tripletens/pharmproject",
     liveUrl: null
   }
 ];
