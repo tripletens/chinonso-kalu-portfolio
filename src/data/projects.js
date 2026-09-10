@@ -263,5 +263,30 @@ export const projects = [
     confidential: false,
     githubUrl: "https://github.com/tripletens/trivia-app",
     liveUrl: null
+  },
+  {
+    id: "wpmedia-interview",
+    title: "WP Media Technical Assessment",
+    tier: 3,
+    isFeatured: false,
+    category: "PHP / Plugin Architecture",
+    industry: "WordPress Engineering & Benchmarking",
+    badge: "Public Repository",
+    shortDescription: "Technical assessment implementation showcasing custom PHP plugin development, object-oriented design, performance tuning, and standards enforcement.",
+    overview: "A dedicated PHP/WordPress technical assessment demonstrating advanced WordPress plugin architecture, custom hooks/filters, strict PSR code formatting, unit/integration testing, and performance optimization practices.",
+    contribution: "Engineered clean object-oriented PHP architecture, modular plugin code layout, automated testing routines, and comprehensive technical documentation.",
+    challenges: "Enforcing strict PSR coding standards, avoiding legacy global state clutter, and delivering optimal execution speeds during hook evaluations.",
+    solution: "Applied clean architecture principles, modern PHP 8.x features, automated testing, and isolated service classes for maintainability.",
+    technologies: ["PHP 8.x", "WordPress", "Custom Plugin Architecture", "OOP", "PHPUnit", "PSR Standards"],
+    highlights: [
+      "Modular Object-Oriented PHP plugin structure",
+      "Strict PSR coding standards & clean code conventions",
+      "Unit & integration testing suite setup",
+      "Public GitHub repository with technical documentation"
+    ],
+    availability: "Public / Open Source Project",
+    confidential: false,
+    githubUrl: "https://github.com/tripletens/wpmedia-interview",
+    liveUrl: null
   }
 ];
