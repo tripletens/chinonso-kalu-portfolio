@@ -203,7 +203,7 @@ export const projects = [
     contribution: "Delivered custom PHP theme architectures, property lead capturing integrations, booking workflows, and server deployments with SSL and security policies.",
     challenges: "Balancing client-friendly administrative editing capabilities with strict performance, responsiveness, and security standards.",
     solution: "Architected lightweight custom templates, integrated third-party form and payment APIs, established SSL/security hardening, and automated regular backup snapshots.",
-    technologies: ["WordPress", "PHP", "Custom Theme Dev", "MySQL", "SSL", "Security Hardening", "Performance Optimization"],
+    technologies: ["WordPress", "PHP", "MySQL", "SSL", "Security Hardening", "Performance Optimization"],
     highlights: [
       "Esther's Place UK — Hospitality booking & brand platform",
       "Apex Prime Properties — Real estate showcase & lead generation portal",
