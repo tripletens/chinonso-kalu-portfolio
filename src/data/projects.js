@@ -339,5 +339,31 @@ export const projects = [
     confidential: false,
     githubUrl: "https://github.com/tripletens/pharmproject",
     liveUrl: null
+  },
+  {
+    id: "capplc-task-reporting",
+    title: "Employee Task Reporting & Approval System",
+    tier: 2,
+    isFeatured: false,
+    category: "Enterprise System",
+    industry: "Workforce & Operations Management",
+    badge: "Public Repository",
+    shortDescription: "Enterprise task reporting system featuring role-based authentication (Employee, Manager, Admin), 24-hour edit windows, manager approval workflows, PDF/Excel export, and scheduled email reports.",
+    overview: "A structured daily task reporting and approval platform engineered with Laravel. Enables employees to submit daily work logs with department tracking, enforces a strict 24-hour edit lock, provides multi-filter managerial dashboards, and automates PDF/Excel report exports alongside scheduled email dispatches to department heads.",
+    contribution: "Engineered role-based access control (RBAC), server-side validation rules, 24-hour report locking logic, manager approval/rejection workflows with comments, PDF and Excel generation services, and scheduled daily email reporting tasks.",
+    challenges: "Enforcing time-sensitive edit windows without data mutation race conditions, structuring multi-role permission gates, and rendering formatted PDF/Excel reports efficiently across large date ranges.",
+    solution: "Built custom Laravel Policy and Middleware gates for RBAC, implemented time-stamp validation rules for the 24-hour edit constraint, and created queued background workers for automated PDF/Excel report dispatches.",
+    technologies: ["PHP", "Laravel", "MySQL", "RBAC", "PDF/Excel Export", "Scheduled Emails", "Tailwind CSS"],
+    highlights: [
+      "Role-Based Access Control (Employee, Manager, Admin)",
+      "Time-locked report editing & manager approval workflow",
+      "Automated PDF & Excel report export pipelines",
+      "Scheduled daily email report dispatches to department heads",
+      "Public GitHub repository"
+    ],
+    availability: "Public / Open Source Project",
+    confidential: false,
+    githubUrl: "https://github.com/tripletens/capplc-test",
+    liveUrl: null
   }
 ];
