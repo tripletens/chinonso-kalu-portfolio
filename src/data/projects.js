@@ -298,20 +298,20 @@ export const projects = [
     industry: "Esports & Gaming Analytics",
     badge: "Client Project",
     shortDescription: "Esports analytics platform providing match performance tracking, tournament metrics, player statistics, and real-time visualization dashboards for a client.",
-    overview: "A comprehensive analytics platform designed to ingest, process, and display performance data for competitive esports tournaments. Features match telemetry visualizations, win/loss ratio distributions, player performance scoring, and comparative team statistics.",
-    contribution: "Engineered backend data aggregation pipelines, RESTful API endpoints for telemetry metrics, dynamic data transformation algorithms, and responsive chart/dashboard layouts.",
-    challenges: "Processing multi-parameter match dataset logs, optimizing aggregation queries for responsive rendering, and maintaining interactive UI updates across complex metric filters.",
-    solution: "Structured indexed data schemas, implemented caching layer for high-frequency statistical queries, and built responsive data visualization components.",
-    technologies: ["JavaScript", "React.js", "REST APIs", "Data Visualization / Charts", "Node.js", "Tailwind CSS"],
+    overview: "A comprehensive analytics platform engineered with Python and Flask to ingest, process, and display performance metrics for competitive esports tournaments. Features match telemetry visualizations, win/loss ratio distributions, player performance scoring, and comparative team statistics.",
+    contribution: "Engineered Python/Flask backend REST API endpoints, data aggregation pipelines for match telemetry metrics, dynamic data transformation logic, and responsive dashboard layouts.",
+    challenges: "Processing multi-parameter match dataset logs, optimizing Flask route handlers and database queries for responsive rendering, and maintaining interactive UI updates across complex metric filters.",
+    solution: "Structured relational database schemas with Flask-SQLAlchemy, implemented query caching for high-frequency statistical calculations, and built clean REST APIs feeding interactive data visualization components.",
+    technologies: ["Python", "Flask", "REST APIs", "SQLAlchemy", "PostgreSQL", "React.js", "Data Visualization"],
     highlights: [
+      "Python / Flask RESTful backend service architecture",
       "Real-time esports match statistics & leaderboard metrics",
       "Interactive data visualization charts & team comparison views",
-      "Optimized metric aggregation pipelines & backend data filtering",
-      "Client project development & architecture"
+      "Optimized metric aggregation pipelines & backend data filtering"
     ],
     availability: "Professional Client Project",
-    confidential: false,
-    githubUrl: "https://github.com/tripletens/easport-analytics",
+    confidential: true,
+    githubUrl: null,
     liveUrl: null
   },
   {
